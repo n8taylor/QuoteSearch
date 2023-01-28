@@ -1,22 +1,18 @@
 import { ReactNode } from "react";
 
-interface FormInputProps {
-  label: string;
-  type?: string;
-  children?: ReactNode;
+interface QuoteBlobProps {
+  quote: string;
+  author: string;
 }
 
 // export function FormInput() {} also works
 // export const FormInput = (props: FormInputProps) => {
-export const QuoteBlob = ({label, type = "text", children = ""}: FormInputProps) => {
+export const QuoteBlob = ({quote, author}: QuoteBlobProps) => {
 //   const {type, label} = props;  
   return (
-    <div className="flex-input">
-      <label>
-        {children}
-        {label}
-      </label>
-      <input type={type} />
+    <div className="blob">
+      <h4 className="quote">{ quote }</h4>
+      <p className="author">-{ author }</p>
     </div>
   );
 }
