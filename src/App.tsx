@@ -68,7 +68,7 @@ function App() {
           placeholder="Albert Einstein"/>
         </form>
         <div>
-          <img src="../public/magnifying-glass-svgrepo-com.svg" className="logo" alt="Magnifying glass" />
+          <img src="/magnifying-glass-svgrepo-com.svg" className="logo" alt="Magnifying glass" />
         </div>  
         {!searchPerformed && (
           <div id='random-quote'>
