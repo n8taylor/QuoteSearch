@@ -66,9 +66,6 @@ function App() {
           onChange={e => setSearch(e.target.value)} 
           placeholder="Albert Einstein"/>
         </form>
-        {/* <div>
-          <img src="/magnifying-glass-svgrepo-com.svg" className="logo" alt="Magnifying glass" />
-        </div>   */}
       </div>
       <br/>
       <div>
